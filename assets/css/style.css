@@ -54,4 +54,11 @@ body {
     .custom-shape-divider-bottom-1677668137 svg {
         height: 120px;
     }
+    
+}
+
+@media(min-width: 1200px) {
+    .image-hero {
+        height: 900px;
+    }
 }
