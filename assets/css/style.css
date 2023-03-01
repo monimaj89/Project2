@@ -1,11 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+body, html {
+    height: 100%;
+}
+
 body {
-    font-family: "Lato", sans-serif;
-    background-color: #a5aeaf; 
+    font-family: "Montserrat", sans-serif;
+    background-color: #a5aeaf;
+    margin: 0; 
 
 }
 
-#image-hero {
-    background-image: url('');
+.shape {
+    position: relative;
+}
+
+.image-hero {
+    width: 100%;
+    height: auto;
+}
+
+
+.custom-shape-divider-bottom-1677668137 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1677668137 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+
+}
+
+.custom-shape-divider-bottom-1677668137 .shape-fill {
+    fill: #a5aeaf;
+}
+
+
+
+@media(min-width: 280px) and (max-width: 374px) {
+    .custom-shape-divider-bottom-1677668137 svg {
+        height: 40px;
+    }
+}
+
+@media(min-width: 768px) {
+    .custom-shape-divider-bottom-1677668137 svg {
+        height: 120px;
+    }
 }
