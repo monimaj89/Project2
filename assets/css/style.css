@@ -157,7 +157,15 @@ body {
     display: none;
 }
 
+/* ------------------------------------- Map */
 
+
+div#map {
+    height: 300px;
+    width: 100%; 
+}
+
+/* ------------------------------------- Media query */
 
 @media(min-width: 280px) and (max-width: 359px) {
     .custom-shape-divider-bottom-1677668137 svg {height: 40px;}
@@ -169,11 +177,15 @@ body {
     .search-box.active {width: 250px;}
 }
 
-@media(min-width: 768px) {
+/* @media(min-width: 768px) {
     .custom-shape-divider-bottom-1677668137 svg {height: 120px;}
     .search-box.active {width: 550px;}
-}
+    div#map {width: 50%; float: left; margin: 20px;}
+} */
 
-@media(min-width: 1200px) {
+@media(min-width: 1024px) {
     .hero-image {height: 900px;}
+    .custom-shape-divider-bottom-1677668137 svg {height: 120px;}
+    .search-box.active {width: 550px;}
+    div#map {width: 50%; float: left;}
 }
