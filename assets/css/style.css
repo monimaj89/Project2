@@ -50,6 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
 
@@ -157,12 +158,14 @@ body {
     display: none;
 }
 
+
 /* ------------------------------------- Map */
 
 
 div#map {
-    height: 300px;
+    height: 400px;
     width: 100%; 
+    margin-right: 20px;
 }
 
 /* ------------------------------------- Media query */
@@ -173,15 +176,15 @@ div#map {
     .search-box input {font-size: 14px;}
 }
 
+@media(min-width: 360px) {
+    .check {display: flex; justify-content: center;}
+}
+
+
 @media(min-width: 360px) and (max-width: 450px) {
     .search-box.active {width: 250px;}
 }
 
-/* @media(min-width: 768px) {
-    .custom-shape-divider-bottom-1677668137 svg {height: 120px;}
-    .search-box.active {width: 550px;}
-    div#map {width: 50%; float: left; margin: 20px;}
-} */
 
 @media(min-width: 1024px) {
     .hero-image {height: 900px;}

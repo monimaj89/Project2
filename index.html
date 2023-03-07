@@ -29,20 +29,37 @@
         <div class="intro">
             <p>Simply click on the &nbsp;<i class="fas fa-search"></i>&nbsp; and type the name of where you would like
                 to visit</p>
-            <div class="search-box">
-                <input type="text" placeholder="Type to search..">
+            <div id="searchBox" class="search-box">
+                <input type="text" placeholder="Search your location">
                 <div class="search-icon">
                     <i class="fas fa-search"></i>
                 </div>
                 <div class="cancel-icon">
                     <i class="fas fa-times"></i>
                 </div>
-                <div class="search-data">
-                </div>
             </div>
         </div>
-        <div class="check">
-            radio checks
+        <div>
+            <fieldset>
+                <legend>Please select what would you like to see:</legend>
+                <div class="check">
+                    <div>
+                        <input type="radio" id="hotel" name="searchFor" value="hotels"
+                            onClick="setSearchFor(this.value)">
+                        <label for="hotel">Hotels</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="restaurant" name="searchFor" value="restaurants"
+                            onClick="setSearchFor(this.value)">
+                        <label for="restaurant">Restaurants</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="attraction" name="searchFor" value="attractions"
+                            onClick="setSearchFor(this.value)">
+                        <label for="attraction">Attractions</label>
+                    </div>
+                </div>
+            </fieldset>
         </div>
         <div class="container">
             <div id="map"></div>
@@ -76,7 +93,7 @@
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
     <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfOaur7IEZuFFfgr3-uR29oa8ehDwfdFs&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfOaur7IEZuFFfgr3-uR29oa8ehDwfdFs&libraries=places&callback=initMap">
     </script>
 </body>
 
