@@ -29,14 +29,15 @@
         <div class="intro">
             <p>Simply click on the &nbsp;<i class="fas fa-search"></i>&nbsp; and type the name of where you would like
                 to visit</p>
-            <div id="searchBox" class="search-box">
-                <input type="text" placeholder="Search your location">
+            <div class="search-box">
+                <input id="pac-input" type="text" placeholder="Search your location">
                 <div class="search-icon">
                     <i class="fas fa-search"></i>
                 </div>
                 <div class="cancel-icon">
                     <i class="fas fa-times"></i>
                 </div>
+                <div class="search-data"></div>       
             </div>
         </div>
         <div>
@@ -80,8 +81,10 @@
             </div>
         </div>
     </section>
-    <footer>
-
+    <footer class="set-bkgnd" id="footer">
+        <div>
+            &copy; M. Majchrowicz '23
+        </div>
     </footer>
     <!-- Font Awesome icon -->
     <script src="https://kit.fontawesome.com/baba64def8.js" crossorigin="anonymous"></script>
@@ -93,7 +96,7 @@
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
     <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfOaur7IEZuFFfgr3-uR29oa8ehDwfdFs&libraries=places&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfOaur7IEZuFFfgr3-uR29oa8ehDwfdFs&libraries=places&callback=initAutocomplete">
     </script>
 </body>
 
