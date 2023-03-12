@@ -179,7 +179,7 @@ div#map {
 
   #resultsTable {
     border-collapse: collapse;
-    width: 240px;
+    width: 100%;
   }
 
   /* .iw_table_row {
