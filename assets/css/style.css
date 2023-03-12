@@ -171,12 +171,8 @@ div#map {
 /* ------------------------------------- Table */
 
 #listing {
-    position: absolute;
-    width: 200px;
-    height: 470px;
+    height: 400px;
     overflow: auto;
-    left: 442px;
-    top: 0px;
     cursor: pointer;
     overflow-x: hidden;
   }
@@ -186,7 +182,7 @@ div#map {
     width: 240px;
   }
 
-  .iw_table_row {
+  /* .iw_table_row {
     height: 18px;
   }
   
@@ -197,7 +193,7 @@ div#map {
   
   .iw_table_icon {
     text-align: right;
-  }
+  } */
   
 /* ------------------------------------- Footer */
 .set-bkgnd {
