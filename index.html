@@ -30,14 +30,14 @@
             <p>Simply click on the &nbsp;<i class="fas fa-search"></i>&nbsp; and type the name of where you would like
                 to visit</p>
             <div class="search-box">
-                <input id="pac-input" type="text" placeholder="Search your location">
+                <input id="searchBox" type="text" placeholder="Search your location">
                 <div class="search-icon">
                     <i class="fas fa-search"></i>
                 </div>
                 <div class="cancel-icon">
                     <i class="fas fa-times"></i>
                 </div>
-                <div class="search-data"></div>       
+                <div class="search-data"></div>
             </div>
         </div>
         <div>
@@ -64,20 +64,36 @@
         </div>
         <div class="container">
             <div id="map"></div>
-            <div class="list">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                Why do we use it?
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
-                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
-                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            <div id="listing">
+                <table id="resultsTable">
+                    <tbody id="results"></tbody>
+                </table>
+            </div>
+            <div style="display: none">
+                <div id="info-content">
+                    <table>
+                        <tr id="iw-url-row" class="iw_table_row">
+                            <td id="iw-icon" class="iw_table_icon"></td>
+                            <td id="iw-url"></td>
+                        </tr>
+                        <tr id="iw-address-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Address:</td>
+                            <td id="iw-address"></td>
+                        </tr>
+                        <tr id="iw-phone-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Telephone:</td>
+                            <td id="iw-phone"></td>
+                        </tr>
+                        <tr id="iw-rating-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Rating:</td>
+                            <td id="iw-rating"></td>
+                        </tr>
+                        <tr id="iw-website-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Website:</td>
+                            <td id="iw-website"></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </section>

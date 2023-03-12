@@ -7,7 +7,7 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #a5aeaf;
+    background-color: #ced8d9;
     margin: 0;
 
 }
@@ -43,7 +43,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1677668137 .shape-fill {
-    fill: #a5aeaf;
+    fill: #ced8d9;
 }
 
 .intro {
@@ -165,14 +165,40 @@ body {
 div#map {
     height: 400px;
     width: 100%; 
-    margin-right: 20px;
+ 
 }
 
-.list {
-    height: 400px;
-    margin: 20px;
-}
+/* ------------------------------------- Table */
 
+#listing {
+    position: absolute;
+    width: 200px;
+    height: 470px;
+    overflow: auto;
+    left: 442px;
+    top: 0px;
+    cursor: pointer;
+    overflow-x: hidden;
+  }
+
+  #resultsTable {
+    border-collapse: collapse;
+    width: 240px;
+  }
+
+  .iw_table_row {
+    height: 18px;
+  }
+  
+  .iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .iw_table_icon {
+    text-align: right;
+  }
+  
 /* ------------------------------------- Footer */
 .set-bkgnd {
     background-color: #eff4f8;
